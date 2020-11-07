@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StatementActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:text="请在60s内完成支付"
+        android:layout_marginTop="20dp"
+        android:textSize="28sp"
+        android:gravity="center"
+        />
+    
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/paymentlist"
+        android:layout_marginTop="20dp"
+        android:background="#cecece"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/countMonery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:textSize="28sp"
+        android:text="0.0"
+        android:gravity="center"
+        />
+    
+    <Button
+        android:id="@+id/playBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#ff0000"
+        android:textColor="@android:color/white"
+        android:layout_margin="20dp"
+        android:text="付款"
+        />
+</LinearLayout>
+</ScrollView>
